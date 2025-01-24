@@ -1,0 +1,135 @@
+.newsletter{
+    background-color: var(--cor-destaque-secundario);
+    
+}
+.newsletter__nav{
+    width: 100%;
+    height: auto;
+    padding: 40px 60px 40px 60px;
+}
+
+.newsletter__nav__container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.newsletter__container__textos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    text-align: center;
+}
+
+.newsletter__container__input{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+    
+}
+
+.newsletter__titulo{
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    align-items: center;
+}
+
+.newsletter__texto{
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    align-items: center;
+}
+
+.newsletter__input input{
+    
+    padding-left: 24px;
+    padding-right: 24px;
+    /* width: 312px;
+    height: 56px; */
+    border-radius: 32px;
+    border: 2px solid var(--cor-links);
+    gap: 10px;
+}
+
+.newsletter__input__dentro{
+    /* width:100%;
+    height: 100%; */
+    width: 312px;
+    height: 56px;
+    padding: 24px 24px;
+    box-sizing: border-box;
+    background-color: var(--cor-destaque-secundario);
+    border-radius: 32px;
+    border: none;
+    font-size: 13px;
+    line-height: 15.6px;
+    font-weight: 400;
+    font-family: var(--fonte-texto);
+    color: var(--cor-links);
+}
+
+
+.newsletter__botao{
+    background-color: var(--cor-fundo-botao);
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-family: var(--fonte-texto);
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 32px;
+    width: 145px;
+    height: 56px;
+    
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+@media (min-width: 720px) {
+    .newsletter__input__dentro{
+        width: 648px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .newsletter__titulo{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    .newsletter__texto{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1130px) {
+    .newsletter__input__dentro{
+        width: 678px;
+    }
+
+    .newsletter__titulo{
+        font-size: 31px;
+        line-height: 37.2px;
+    }
+    
+    .newsletter__texto{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .newsletter__container__input{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+}
